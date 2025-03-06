@@ -163,19 +163,7 @@ export default function Footer({
         </div>
         <div class="border-primary border-t flex flex-col gap-4 items-center justify-between lg:flex-row lg:items-center py-8">
           <div class="flex flex-col gap-4 items-center lg:flex-row lg:gap-6">
-            <a
-              href={madeWith?.href}
-              class="flex items-center gap-2"
-              target="_blank"
-            >
-              <span>{madeWith?.label}</span>
-              <Image
-                src={madeWith?.src || ""}
-                width={100}
-                height={28}
-                alt={madeWith?.label}
-              />
-            </a>
+          
             <span>{copyright}</span>
             <div class="flex gap-2 justify-between lg:gap-6">
               {bottomLinks?.map((item) => (
